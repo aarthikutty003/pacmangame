@@ -28,7 +28,7 @@
     var container=document.getElementById("container");
     function create() {
         var pac = document.createElement("img");
-        pac.src = "PacMan1.png";
+        pac.src = "./images/PacMan1.png";
         var xpos = Math.random() * 750; 
         var ypos = Math.random() * 350; 
         var xvel = Math.floor(Math.random() * 20) ; 
@@ -50,15 +50,15 @@
             y_pos[i] += y_vel[i];
             if (x_vel[i]>0) {
                 if (Math.floor(x_pos[i]/x_vel[i]) %2!== 0) {
-                    pacman[i].src ="PacMan2.png";
+                    pacman[i].src ="./images/PacMan2.png";
                 } else {
-                    pacman[i].src ="PacMan1.png";
+                    pacman[i].src ="./imagesPacMan1.png";
                 }
             } else {
                 if (Math.floor(x_pos[i]/x_vel[i])%2!==0) {
-                    pacman[i].src = "PacMan4.png";
+                    pacman[i].src = "./images/PacMan4.png";
                 } else {
-                    pacman[i].src ="PacMan3.png";
+                    pacman[i].src ="./images/PacMan3.png";
                 }
             }
             
